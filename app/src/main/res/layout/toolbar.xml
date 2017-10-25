@@ -1,0 +1,102 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:theme="@style/ToolbarTheme"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/ToolbarTheme">
+
+    <LinearLayout
+        android:id="@+id/rl_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#C62828"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:src="@drawable/ic_menu"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:text="Profile"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="25dp"
+                    android:id="@+id/ic_audio"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="25dp"
+                    android:layout_height="23dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_support"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/ic_notif"
+                    android:layout_toLeftOf="@+id/ic_audio"
+                    android:layout_width="23dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_notif"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/ic_gift"
+                    android:layout_toLeftOf="@+id/ic_notif"
+                    android:layout_width="24dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_boxgift"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_marginRight="12dp"
+                    android:layout_toLeftOf="@+id/ic_gift"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_pay"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+
+
+
+
