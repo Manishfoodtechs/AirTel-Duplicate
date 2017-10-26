@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.mendev.airtelduplicate.ProfileActivity">
+
     <android.support.design.widget.AppBarLayout
+        android:id="@+id/lay_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -16,11 +18,305 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v4.widget.DrawerLayout
-        android:id="@+id/drawer"
-        android:layout_marginTop="?attr/actionBarSize"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lay_toolbar"
+        android:background="#C62828">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_first"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/lay_toolbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/border_shadow">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_avatar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Menda Kis"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#E57373"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="+628XXXXXX003"
+                    android:textColor="#9E9E9E" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Member Since 12 Mar, 2017"
+                    android:textColor="#9E9E9E" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/linearLayout"
+            android:background="#BDBDBD" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Rp. 100000,-"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#E57373"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Current Balance"
+                    android:textColor="#9E9E9E" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="#BDBDBD" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="806.87MB"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#E57373"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="/1024.56MB"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#E57373"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Data Usage Limit"
+                    android:textColor="#9E9E9E" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_second"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/lay_first"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_megaphone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You have already consumed 80% of"
+                    android:textColor="#9E9E9E" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="your current 3G data pack."
+                    android:textColor="#9E9E9E"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/lay_second"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lay_3b"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_shadow"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_crown" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="My Bundle Pack"
+                android:textColor="#212121"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Validity: 30 March, 2017"
+                android:textColor="#9E9E9E"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_3a"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_shadow"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_addfriend" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Friend &amp; Family "
+                android:textColor="#212121"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="You can add 7 more friends"
+                android:textColor="#9E9E9E"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="gone"
         tools:openDrawer="start">
 
         <android.support.design.widget.NavigationView
@@ -28,11 +324,11 @@
             android:layout_width="300dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:background="#fff"
-            app:itemTextColor="#212121"
-            app:insetForeground="#BDBDBD"
             android:layout_marginBottom="30dp"
+            android:background="#fff"
             app:headerLayout="@layout/layout_header"
+            app:insetForeground="#BDBDBD"
+            app:itemTextColor="#212121"
             app:menu="@menu/item_navigasi" />
     </android.support.v4.widget.DrawerLayout>
 </RelativeLayout>

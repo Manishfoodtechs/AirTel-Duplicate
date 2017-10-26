@@ -33,6 +33,7 @@ public class ProfileActivity extends AppCompatActivity {
         drwClick2 = (LinearLayout) findViewById(R.id.drawerClick2);
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+        drawerLayout.setVisibility(View.VISIBLE);
 
         drwClick.setOnClickListener(new View.OnClickListener() {
             @Override

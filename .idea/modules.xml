@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AirTelDuplicate.iml" filepath="$PROJECT_DIR$/AirTelDuplicate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Airtel-Duplicate.iml" filepath="$PROJECT_DIR$/Airtel-Duplicate.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
