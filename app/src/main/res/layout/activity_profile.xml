@@ -5,18 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.mendev.airtelduplicate.ProfileActivity">
-    <LinearLayout
-        android:id="@+id/layout_header"
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <!-- The ActionBar displayed at the top -->
         <include
             android:id="@+id/in_lay_toolbar"
             layout="@layout/toolbar" />
 
-    </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer"
@@ -31,6 +29,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="#fff"
+            app:itemTextColor="#212121"
+            app:insetForeground="#BDBDBD"
             android:layout_marginBottom="30dp"
             app:headerLayout="@layout/layout_header"
             app:menu="@menu/item_navigasi" />

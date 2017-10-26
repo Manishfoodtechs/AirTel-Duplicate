@@ -1,42 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="all">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <group android:checkableBehavior="single"
+       >
         <item
             android:id="@+id/navigation1"
             android:checked="false"
-            android:icon="@drawable/ic_beranda"
-            android:title="Beranda" />
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
         <item
             android:id="@+id/navigation2"
             android:checked="false"
-            android:icon="@drawable/ic_profil"
-            android:title="Profile" />
+            android:icon="@drawable/ic_product"
+            android:title="Product Services" />
         <item
             android:id="@+id/navigation3"
             android:checked="false"
-            android:icon="@drawable/ic_daftar"
-            android:title="Daftar" />
+            android:icon="@drawable/ic_vas"
+            android:title="VAS" />
+        <item
+            android:id="@+id/navigation4"
+            android:checked="false"
+            android:icon="@drawable/ic_internet"
+            android:title="Internet Pack" />
+        <item
+            android:id="@+id/navigation5"
+            android:checked="false"
+            android:icon="@drawable/ic_livechat"
+            android:title="Live Chat" />
 
 
     </group>
 
-
-    <item
-        android:id="@+id/navigasi_kategori_2"
-        android:title="Sub item navigasi">
-        <menu>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
             <item
-                android:id="@+id/navigation4"
+                android:id="@+id/navigation6"
                 android:checked="false"
-                android:icon="@drawable/ic_setting"
+                android:icon="@drawable/ic_settings"
                 android:title="Setting" />
             <item
-                android:id="@+id/navigation5"
+                android:id="@+id/navigation7"
                 android:checked="false"
-                android:icon="@drawable/ic_about"
-                android:title="About" />
+                android:icon="@drawable/ic_logout"
+                android:title="Log out" />
 
-        </menu>
-    </item>
+    </group>
 
 </menu>

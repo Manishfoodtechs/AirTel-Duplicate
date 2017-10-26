@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Light"></style>
+
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
 </resources>
