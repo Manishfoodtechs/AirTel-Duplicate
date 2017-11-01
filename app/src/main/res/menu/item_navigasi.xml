@@ -4,12 +4,12 @@
     <group android:checkableBehavior="single"
        >
         <item
-            android:id="@+id/navigation1"
+            android:id="@+id/profile"
             android:checked="false"
             android:icon="@drawable/ic_profile"
             android:title="Profile" />
         <item
-            android:id="@+id/navigation2"
+            android:id="@+id/product"
             android:checked="false"
             android:icon="@drawable/ic_product"
             android:title="Product Services" />
